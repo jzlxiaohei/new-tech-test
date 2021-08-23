@@ -1,0 +1,29 @@
+.aw-touchable {
+  transition: transform 380ms ease-out;
+
+  // &.disabled {
+  // }
+  &.opacity {
+    opacity: 0.4;
+  }
+}
+
+.aw-touchable-loading-wrapper {
+  @keyframes aw-loading-rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  display: inline-block;
+  animation: aw-loading-rotate 1s linear;
+  animation-iteration-count: infinite;
+  img {
+    width: 100%;
+  }
+}
